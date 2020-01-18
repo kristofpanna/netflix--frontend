@@ -10,22 +10,12 @@ import Videos from './components/Videos';
 class App extends Component {
     state = {
         videos: [
-            {
-                "id": 1,
-                "name": "Mando",
-                "url": "https://www.youtube.com/watch?v=V7yqW64Dx7c"
-            },
-            {
-                "id": 2,
-                "name": "Mando2",
-                "url": "https://..."
-            }
         ]
     };
 
     componentDidMount() {
-        //axios.get('localhost:8762/video/video/')
-        //    .then(res => this.setState({ videos: res.data }));
+        axios.get('http://192.168.0.234:8762/video/video/')
+            .then(res => this.setState({ videos: res.data }));
     }
 
     render() {

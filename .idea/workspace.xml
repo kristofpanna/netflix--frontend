@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abb36fc8-5fad-4f81-9278-1a5ffb28d73b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/VideoItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Videos.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/VideoDetails.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Videos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Videos.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,8 +89,16 @@
       <option name="presentableId" value="Default" />
       <updated>1579300371165</updated>
       <workItem from="1579300372816" duration="2876000" />
-      <workItem from="1579367845525" duration="4492000" />
+      <workItem from="1579367845525" duration="7359000" />
     </task>
+    <task id="LOCAL-00001" summary="Create main page with video list (static, unstyled)">
+      <created>1579372694674</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579372694674</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,34 +117,38 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create main page with video list (static, unstyled)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create main page with video list (static, unstyled)" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="311" y="58" width="800" height="677" key="#ESLint" timestamp="1579368162908">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="311" y="58" width="800" height="677" key="#ESLint/67.27.1299.741@67.27.1299.741" timestamp="1579368162908" />
-    <state x="221" y="27" width="980" height="741" key="CommitChangelistDialog2" timestamp="1579301013484">
+    <state x="221" y="27" width="980" height="741" key="CommitChangelistDialog2" timestamp="1579372694243">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="221" y="27" width="980" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1579301013484" />
+    <state x="221" y="27" width="980" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1579372694243" />
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1579368126713">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1579368126713" />
-    <state width="1276" height="175" key="GridCell.Tab.0.bottom" timestamp="1579372066457">
+    <state width="1276" height="175" key="GridCell.Tab.0.bottom" timestamp="1579375332727">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1579372066457" />
-    <state width="1276" height="175" key="GridCell.Tab.0.center" timestamp="1579372066457">
+    <state width="1276" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1579375332727" />
+    <state width="1276" height="175" key="GridCell.Tab.0.center" timestamp="1579375332726">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1579372066457" />
-    <state width="1276" height="175" key="GridCell.Tab.0.left" timestamp="1579372066456">
+    <state width="1276" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1579375332726" />
+    <state width="1276" height="175" key="GridCell.Tab.0.left" timestamp="1579375332725">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1579372066456" />
-    <state width="1276" height="175" key="GridCell.Tab.0.right" timestamp="1579372066457">
+    <state width="1276" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1579375332725" />
+    <state width="1276" height="175" key="GridCell.Tab.0.right" timestamp="1579375332726">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1579372066457" />
+    <state width="1276" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1579375332726" />
   </component>
 </project>
