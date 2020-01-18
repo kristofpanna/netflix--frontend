@@ -6,6 +6,7 @@ class Videos extends Component {
     render() {
         return this.props.videos.map(video => (
             <VideoItem
+                key={video.id}
                 video={video}
             />
         ));
