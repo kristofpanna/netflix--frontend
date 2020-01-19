@@ -21,28 +21,7 @@ class App extends Component {
                 name: "Mando",
                 url: "https://www.youtube.com/watch?v=V7yqW64Dx7c"
             }
-        ],
-        details: {
-            video: {
-                id: 1,
-                name: "Mando",
-                url: "https://www.youtube.com/watch?v=V7yqW64Dx7c"
-            },
-            recommendations: [
-                {
-                    comment: "Baby Yoda for President!!!",
-                    id: 1,
-                    rating: 3,
-                    videoId: 1
-                },
-                {
-                    comment: "Baby Yoda for President!!! Again!",
-                    id: 2,
-                    rating: 4,
-                    videoId: 1
-                }
-            ]
-        }
+        ]
     };
 
     componentDidMount() {
@@ -65,16 +44,23 @@ class App extends Component {
                             exact path="/"
                             render={ props =>
                                 <React.Fragment>
-                                    <VideoDetails
-                                        details={this.state.details}
-                                    />
                                     <Videos
                                         videos={this.state.videos}
                                     />
                                 </React.Fragment>
                             }
                         />
-                        <Route path="/video/" component={VideoDetails}/>
+                        <Route
+                            path="/video/"
+                            component={VideoDetails}
+                            render={ props =>
+                                <React.Fragment>
+                                    <VideoDetails
+                                        details={this.state.details}
+                                    />
+                                </React.Fragment>
+                            }
+                        />
                     </div>
                 </div>
             </Router>
