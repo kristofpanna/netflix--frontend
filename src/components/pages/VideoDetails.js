@@ -17,7 +17,7 @@ export class VideoDetails extends Component {
         const { name, url } = details.video;
         return (
             <React.Fragment>
-                <p>{ name }</p>
+                <h2>{ name }</h2>
                 <EmbeddedVideo
                     url={url}
                     name={name}
