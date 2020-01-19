@@ -5,17 +5,54 @@ import Header from './components/layout/Header';
 import './App.css';
 import axios from 'axios';
 import Videos from './components/Videos';
+import VideoDetails from "./components/pages/VideoDetails";
 
 
 class App extends Component {
     state = {
         videos: [
-        ]
+            {
+                id: 1,
+                name: "Mando",
+                url: "https://www.youtube.com/watch?v=V7yqW64Dx7c"
+            },
+            {
+                id: 2,
+                name: "Mando",
+                url: "https://www.youtube.com/watch?v=V7yqW64Dx7c"
+            }
+        ],
+        details: {
+            video: {
+                id: 1,
+                name: "Mando",
+                url: "https://www.youtube.com/watch?v=V7yqW64Dx7c"
+            },
+            recommendations: [
+                {
+                    comment: "Baby Yoda for President!!!",
+                    id: 1,
+                    rating: 3,
+                    videoId: 1
+                },
+                {
+                    comment: "Baby Yoda for President!!! Again!",
+                    id: 2,
+                    rating: 4,
+                    videoId: 1
+                }
+            ]
+        }
     };
 
     componentDidMount() {
+
         axios.get('http://192.168.0.234:8762/video/video/')
-            .then(res => this.setState({ videos: res.data }));
+            .then(res => this.setState({
+                videos: res.data
+            }));
+
+
     }
 
     render() {
@@ -28,12 +65,16 @@ class App extends Component {
                             exact path="/"
                             render={ props =>
                                 <React.Fragment>
+                                    <VideoDetails
+                                        details={this.state.details}
+                                    />
                                     <Videos
                                         videos={this.state.videos}
                                     />
                                 </React.Fragment>
                             }
                         />
+                        <Route path="/video/" component={VideoDetails}/>
                     </div>
                 </div>
             </Router>

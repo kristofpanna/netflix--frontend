@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abb36fc8-5fad-4f81-9278-1a5ffb28d73b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/VideoDetails.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/EmbeddedVideo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/RecommendationItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Recommendations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/pages/VideoDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Videos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Videos.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +25,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1WXeTCTL1kZFpinYMlnUWjrdzGr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -33,6 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-example-todos" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -48,6 +58,7 @@
       <recent name="$PROJECT_DIR$/src/layout" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/pages" />
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
   </component>
@@ -89,7 +100,8 @@
       <option name="presentableId" value="Default" />
       <updated>1579300371165</updated>
       <workItem from="1579300372816" duration="2876000" />
-      <workItem from="1579367845525" duration="7359000" />
+      <workItem from="1579367845525" duration="11943000" />
+      <workItem from="1579380735722" duration="326000" />
     </task>
     <task id="LOCAL-00001" summary="Create main page with video list (static, unstyled)">
       <created>1579372694674</created>
@@ -98,7 +110,21 @@
       <option name="project" value="LOCAL" />
       <updated>1579372694674</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Get data from server">
+      <created>1579375897751</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579375897751</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add key to items">
+      <created>1579375928267</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579375928267</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,36 +145,38 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create main page with video list (static, unstyled)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create main page with video list (static, unstyled)" />
+    <MESSAGE value="Get data from server" />
+    <MESSAGE value="Add key to items" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add key to items" />
   </component>
   <component name="WindowStateProjectService">
     <state x="311" y="58" width="800" height="677" key="#ESLint" timestamp="1579368162908">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="311" y="58" width="800" height="677" key="#ESLint/67.27.1299.741@67.27.1299.741" timestamp="1579368162908" />
-    <state x="221" y="27" width="980" height="741" key="CommitChangelistDialog2" timestamp="1579372694243">
+    <state x="221" y="27" width="980" height="741" key="CommitChangelistDialog2" timestamp="1579375928108">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="221" y="27" width="980" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1579372694243" />
+    <state x="221" y="27" width="980" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1579375928108" />
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1579368126713">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1579368126713" />
-    <state width="1276" height="175" key="GridCell.Tab.0.bottom" timestamp="1579375332727">
+    <state width="1276" height="175" key="GridCell.Tab.0.bottom" timestamp="1579432484822">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1579375332727" />
-    <state width="1276" height="175" key="GridCell.Tab.0.center" timestamp="1579375332726">
+    <state width="1276" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1579432484822" />
+    <state width="1276" height="175" key="GridCell.Tab.0.center" timestamp="1579432484821">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1579375332726" />
-    <state width="1276" height="175" key="GridCell.Tab.0.left" timestamp="1579375332725">
+    <state width="1276" height="175" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1579432484821" />
+    <state width="1276" height="175" key="GridCell.Tab.0.left" timestamp="1579432484820">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1579375332725" />
-    <state width="1276" height="175" key="GridCell.Tab.0.right" timestamp="1579375332726">
+    <state width="1276" height="175" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1579432484820" />
+    <state width="1276" height="175" key="GridCell.Tab.0.right" timestamp="1579432484822">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1579375332726" />
+    <state width="1276" height="175" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1579432484822" />
   </component>
 </project>
